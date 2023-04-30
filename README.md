@@ -1,3 +1,3 @@
-# Habitracker
+### Habitracker
 
-Material 3 based habit tracker build using Flutter
+Material 3 based habit tracker
