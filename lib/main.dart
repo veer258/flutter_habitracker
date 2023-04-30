@@ -31,6 +31,8 @@ class MainApp extends StatelessWidget {
             StrHabit(),
           ],
         ),
+        floatingActionButton:
+            FloatingActionButton(onPressed: () {}, child: Icon(Icons.add)),
       ),
     );
   }
