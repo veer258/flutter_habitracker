@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BoolHabit extends StatefulWidget {
-  const BoolHabit({super.key});
-
   @override
+  final String habitName;
+  const BoolHabit({Key? key, required this.habitName}) : super(key: key);
+
   State<BoolHabit> createState() => _BoolHabitState();
 }
 
@@ -22,7 +23,7 @@ class _BoolHabitState extends State<BoolHabit> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text("Read"),
+          Text(widget.habitName),
           Checkbox(
               value: isChecked,
               onChanged: (bool? value) {

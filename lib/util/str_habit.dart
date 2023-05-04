@@ -21,11 +21,7 @@ class _StrHabitState extends State<StrHabit> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text("Workout"),
-          IconButton(
-              onPressed: () {
-                //change value
-              },
-              icon: Icon(Icons.catching_pokemon_outlined))
+          TextButton(onPressed: () {}, child: Text("Biceps"))
         ],
       ),
     );
