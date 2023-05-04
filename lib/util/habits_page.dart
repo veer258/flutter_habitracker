@@ -1,8 +1,8 @@
 import "package:flutter/material.dart";
+import "package:flutter_habitracker/util/add_habit.dart";
 import "package:flutter_habitracker/util/bool_habit.dart";
 import "package:flutter_habitracker/util/int_habit.dart";
 import "package:flutter_habitracker/util/str_habit.dart";
-import "package:flutter_habitracker/util/add_habit.dart";
 
 class HabitsPage extends StatefulWidget {
   const HabitsPage({super.key});
@@ -28,10 +28,7 @@ class _HabitsPageState extends State<HabitsPage> {
       body: ListView(
         children: habitsList.map((habit) => habit as Widget).toList(),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButton: AddHabit(),
     );
   }
 }
