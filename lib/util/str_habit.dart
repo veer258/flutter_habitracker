@@ -21,7 +21,7 @@ class _StrHabitState extends State<StrHabit> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text("Workout"),
-          TextButton(onPressed: () {}, child: Text("Biceps"))
+          TextButton(onPressed: () {}, child: Text("None")),
         ],
       ),
     );

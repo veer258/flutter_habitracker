@@ -11,6 +11,12 @@ class BoolHabit extends StatefulWidget {
 class _BoolHabitState extends State<BoolHabit> {
   bool isChecked = false;
 
+  toggleCheck(bool? value) {
+    setState(() {
+      isChecked = value!;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,13 +30,7 @@ class _BoolHabitState extends State<BoolHabit> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(widget.habitName),
-          Checkbox(
-              value: isChecked,
-              onChanged: (bool? value) {
-                setState(() {
-                  isChecked = value!;
-                });
-              })
+          Checkbox(value: isChecked, onChanged: toggleCheck)
         ],
       ),
     );

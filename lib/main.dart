@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_habitracker/util/habits_page.dart';
+import 'package:flutter_habitracker/pages/habits_page.dart';
 
 void main() {
   runApp(const MainApp());
